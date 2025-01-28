@@ -1,0 +1,72 @@
+*{
+  box-sizing:border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background:lightyellow;
+}
+
+div.grid-item{
+  width:33.33%;
+  padding:10px;
+}
+
+
+h1 {
+  color:transparent;
+  background:linear-gradient(to right,pink,orange,blue);
+  -webkit-background-clip: text;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top:60px;
+    text-align: center;
+    font-size:80px;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    animation: fallDown 1s ease-out;
+}
+
+
+
+@keyframes fallDown {
+  0% {
+    transform: translateY(-100px); 
+    opacity: 0; 
+  }
+  70% {
+    transform: translateY(30px); /* Move slightly below the final position */
+    opacity: 1; /* Make the title visible */
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+  }
+}
+
+
+div.grid{
+  padding-top:20px;
+}
+
+div.grid-item {
+  width:33.33%;
+  border-radius:20px;
+}
+
+div.grid-item img{
+  width:100%;
+  border-radius:20px;
+}
+
+div.image{
+  width:100%;
+  transition:all 1s;
+  border-radius:20px;
+}
+
+div.image:hover {
+  background:lightblue;  
+  padding:40px;
+  box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.3);
+}
